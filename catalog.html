@@ -1,63 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Нёрдс: Магазин</title>
-  </head>
-  <body>
-    <header class="nerds-header">
-        <nav class="nerds-navigation">
-            <a class="nerds-header-logo" href="index.html">
-                <img src="img/logo-nerds.svg" width="62" height="28" alt="Логотип Нердс»">
-            </a>
-            <ul class="site-navigation">
-                <li><a href="studio.html">Студия</a></li>
-                <li><a href="clients.html">Клиенты</a></li>
-                <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <ul class="user-navigation">
-                <li class="login-basket-link">Корзина</li>
-            </ul>
-        </nav>
-    </header>
-    <main class="conteiner">
-        <h1 class="page-title">Магазин готовых шаблонов</h1>
-        <section class="filtres">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
-        </section>
-        <section сlass="catalog">
-            <h2 class="visually-hidden">Список готовых решений</h2>
-            <ul class="catalog-list">
-                <li class="catalog-item">
-                    <p class="catalog-item-image">
-                        <img src="img/product-1.jpg" width="220" height="165" alt="Решение 1">
-                    </p>
-                    <p class="catalog-item-price">
-                    <a class="button" href="#">9 900 РУБ.</a>
-                    </p>
-                </li>
-            </ul>
-            <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a>1</a></li>
-                <li class="pagination-item"><a href="#">2</a></li>
-                <li class="pagination-item"><a href="#">3</a></li>
-                <span class="button pagination-list pagination-list-next">СЛЕДУЮЩАЯ</span>
-            </ul>
-        </section>
 
-    </main>
-    <footer class="main-footer">
-        <div class="footer-social">
-            <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
-            </ul>
-        </div>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-    </footer>
-   </body>
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс: Магазин</title>
+</head>
+
+<body>
+  <header class="nerds-header">
+    <nav class="nerds-navigation">
+      <a class="nerds-header-logo" href="index.html">
+        <img src="img/logo-nerds.svg" width="62" height="28" alt="Логотип Нердс»">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="clients.html">Клиенты</a></li>
+        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="basket.html">Корзина</a></li>
+      </nav>
+  </header>
+  <main class="container">
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
+    <section class="filtres">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <!-- Здесь будет форма -->
+    </section>
+    <section сlass="catalog">
+      <h2 class="visually-hidden">Список готовых решений</h2>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <img src="img/product-1.jpg" width="220" height="165" alt="Решение 1">
+          <h3>Sedona</h3>
+          <p>Информационный сайт для туристов</p>
+          <a class="button" href="#">9 900 РУБ.</a>
+        </li>
+        <li class="catalog-item">
+          <img src="img/product-2.jpg" width="220" height="165" alt="Решение 2">
+          <h3>Pink</h3>
+          <p>Приложение для настроения</p>
+          <a class="button" href="#">1 000 РУБ.</a>
+        </li>
+        <li class="catalog-item">
+          <img src="img/product-3.jpg" width="220" height="165" alt="Решение 3">
+          <h3>Barbershop Borodinski</h3>
+          <p>Модные стрижки для мужчин</p>
+          <a class="button" href="#">1 499 РУБ.</a>
+        </li>
+        <li class="catalog-item">
+          <img src="img/product-4.jpg" width="220" height="165" alt="Решение 4">
+          <h3>Mishka</h3>
+          <p>Милые штучки ручной работы для дома</p>
+          <a class="button" href="#">1 199 РУБ.</a>
+        </li>
+        <li class="catalog-item">
+          <img src="img/product-5.jpg" width="220" height="165" alt="Решение 5">
+          <h3>А+</h3>
+          <p>Интересное обучение</p>
+          <a class="button" href="#">49 900 РУБ.</a>
+        </li>
+        <li class="catalog-item">
+          <img src="img/product-6.jpg" width="220" height="165" alt="Решение 6">
+          <h3>Кваст</h3>
+          <p>Крафтовый квас</p>
+          <a class="button" href="#">190 РУБ.</a>
+        </li>
+      </ul>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item-button"><a href="#">Следующая</a></li>
+      </ul>
+    </section>
+
+  </main>
+  <footer class="main-footer">
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
+    </div>
+    <h3>Давайте дружить, это выгодно!</h3>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
+</body>
+
 </html>
