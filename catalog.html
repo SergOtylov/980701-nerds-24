@@ -18,13 +18,57 @@
         <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
         <li><a href="basket.html">Корзина</a></li>
-      </nav>
+    </nav>
   </header>
   <main class="container">
     <h1 class="page-title">Магазин готовых шаблонов</h1>
     <section class="filtres">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
+      <form class="nerds-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden" type="radio" name="page-grid" value="adaptive" id="filter-adaptive">
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden" type="radio" name="page-grid" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden" type="radio" name="page-grid" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden" type="checkbox" name="slider" id="features-slider" checked>
+              <label for="features-slider">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden" type="checkbox" name="advantage-block" id="features-advantage-block">
+              <label for="features-advantage-block">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden" type="checkbox" name="news" id="features-news" checked>
+              <label for="features-news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden" type="checkbox" name="gallery" id="features-gallery">
+              <label for="features-gallery">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden" type="checkbox" name="basket" id="features-basket">
+              <label for="features-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="filter-button" type="submit">Показать</button>
+      </form>
     </section>
     <section сlass="catalog">
       <h2 class="visually-hidden">Список готовых решений</h2>
@@ -76,6 +120,33 @@
 
   </main>
   <footer class="main-footer">
+    <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
+    <p class="fotter-contact">
+      <strong>Nerds design studio</strong><br>
+      191186, Санкт-Петербург,<br>
+      Б. Коношенная, д. 19/8<br>
+      Телефон: +7 (812) 275-75-75<br>
+      <button class="letter-nerds" type="submit">Напишите нам</button>
+      <form class="letter-form-nerds" action="https://echo.htmlacademy.ru" method="get">
+        <h3>Напишите нам</h3>
+        <p>
+          <label class="visually-hidden" for="user-name">Ваше имя:</label>
+          <br>
+          <input class="user-letter-nerds" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+          <br>
+          <input class="user-letter-nerds" id="user-email" type="text" name="user-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visuallu-hidden" for="comments-user">Текст письма:</label>
+          <br>
+          <textarea class="user-letter-nerds" name="comments" id="comments-user" rows="15" cols="50">В свободной форме</textarea>
+        </p>
+        <button class="letter-button" type="submit">Отправить</button>
+      </form>
+    </p>
     <div class="footer-social">
       <ul>
         <li><a class="social-button" href="#">Вконтакте</a></li>
